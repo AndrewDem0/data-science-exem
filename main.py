@@ -4,7 +4,7 @@ class NegativeImportValueError(Exception):
     pass
 
 # Функція для розрахунку мита
-def calculate_duty(import_value: float, goods_group: str) -> float:
+def calculate_duty(import_value: int, goods_group: str):
     """
     Розраховує мито залежно від суми імпорту та групи товарів.
     
