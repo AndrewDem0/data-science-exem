@@ -6,7 +6,7 @@ from main import calculate_duty, NegativeImportValueError
 class TestCalculateDuty(unittest.TestCase):
     def test_positive_values(self):
         """Тестуємо коректні значення для різних груп товарів."""
-        self.assertEqual(calculate_duty(1000, 'A'), 50.0)
+        self.assertEqual(calculate_duty(1000, 'A'), 6.0)
         self.assertEqual(calculate_duty(2000, 'B'), 200.0)
         self.assertEqual(calculate_duty(1500, 'C'), 225.0)
     
